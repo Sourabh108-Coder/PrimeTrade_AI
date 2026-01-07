@@ -25,7 +25,7 @@ router.post("/register", async (req, res) => {
 
     const payload = { user: { id: user._id } };
 
-    const token = jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: "1h" });
+    const token = jwt.sign(payload, process.env.JWT_SECRET);
 
     return res.status(200).json({ success:true, token, user: {id: user._id, name: user.name, email: user.email } });
   } catch (err) {
@@ -47,7 +47,7 @@ router.post("/login", async (req, res) => {
     if (!isMatch) return res.status(400).json({success:false ,message: "Invalid Password" });
 
     const payload = { user: { id: user._id } };
-    const token = jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: "1h" });
+    const token = jwt.sign(payload, process.env.JWT_SECRET);
 
     res.json({ success:true, token, user: { id: user._id, name: user.name, email: user.email } });
   } catch (err) {
