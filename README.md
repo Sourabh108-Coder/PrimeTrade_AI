@@ -1,89 +1,86 @@
-# PrimeTrade AI – Full Stack Assignment
+## PrimeTrade AI – Full Stack Assignment
 
-A scalable full-stack web application with authentication, protected dashboard, profile management, and task CRUD functionality.
+*A scalable full-stack web application with authentication, protected dashboard, profile management, and task CRUD functionality.*
 
-## 🚀 Tech Stack
-### Frontend
-- React.js
-- Tailwind CSS
-- React Router
+**🚀 Tech Stack**
+   1. Frontend
+      - React.js
+      - Tailwind CSS
+      - React Router
 
-### Backend
-- Node.js
-- Express.js
-- MongoDB (Mongoose)
-- JWT Authentication
-- bcrypt password hashing
+   2. Backend
+      - Node.js
+      - Express.js
+      - MongoDB (Mongoose)
+      - JWT Authentication
+      - bcrypt password hashing
 
----
 
-## ✨ Features
-- User Registration & Login
-- JWT-based Authentication
-- Protected Routes
-- User Profile Fetch & Update
-- Task CRUD Operations
-- Responsive UI
-- Secure password storage
+**✨ Features**
+   - User Registration & Login
+   - JWT-based Authentication
+   - Protected Routes
+   - User Profile Fetch & Update
+   - Task CRUD Operations
+   - Responsive UI
+   - Secure password storage
 
----
 
-## 📁 Project Structure
+**📁 Project Structure**
+
 ├── frontend
 │ └── React application
 ├── backend
 │ └── Express API
 
 
----
 
-## 🛠️ Setup Instructions
+**🛠️ Setup Instructions**
 
-### Backend Setup
-```bash
-cd backend
-npm install
-npm run dev
+   1. Backend Setup
+      - cd backend
+      - npm install
+      - npm run dev
 
-Create .env file:
-MONGO_URI=your_mongodb_uri
-JWT_SECRET=your_jwt_secret
-PORT=5000
+   2. Create .env file:
+      - MONGO_URI=your_mongodb_uri
+      - JWT_SECRET=your_jwt_secret
+      - PORT=5000
 
 
-Frontend Setup
-cd frontend
-npm install
-npm start
+   3. Frontend Setup
+      - cd frontend
+      - npm install
+      - npm start
 
 
-📡 API Endpoints
+**📡 API Endpoints**
 
-Auth
- - POST /api/auth/register
+   1. Auth
+      - POST /api/auth/register
 
- - POST /api/auth/login
+      - POST /api/auth/login
 
- - GET /api/auth/me
-
-
-Profile
- - GET /api/user/profile
-
- - PUT /api/user/profile
+      - GET /api/auth/me
 
 
-Tasks
- - GET /api/tasks
+   2. Profile
+      - GET /api/user/profile
 
- - POST /api/tasks
-
- - PUT /api/tasks/:id
-
- - DELETE /api/tasks/:id
+      - PUT /api/user/profile
 
 
-🔐Security
+   3. Tasks
+      - GET /api/tasks
+
+      - POST /api/tasks
+
+      - PUT /api/tasks/:id
+
+      - DELETE /api/tasks/:id
+
+
+**🔐Security**
  - Password hashing using bcrypt
 
  - JWT token-based authentication
@@ -91,7 +88,7 @@ Tasks
  - Protected backend routes using middleware
 
 
-📈Scalability 
+**📈Scalability** 
  - Modular backend architecture
 
  - Easy to extend APIs
@@ -101,7 +98,9 @@ Tasks
  - Can be deployed using cloud services (Vercel, Render, AWS)
 
 
+**Screenshots**
 
-👤Author
- - Sourabh 
-    * Frontend Developer Intern Candidate
+
+
+**👤Author**
+   *- Sourabh (Frontend Developer Intern Candidate) (https://github.com/Sourabh108-Coder/)* 
