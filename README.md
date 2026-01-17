@@ -100,6 +100,35 @@
 
 **Screenshots**
 
+## Login Page
+![Login Page](screenshots/Login_Page.png)
+
+## Signup Page
+![Signup Page](screenshots/Signup_Page.png)
+
+## Signup Page (Mobile)
+![Signup Page (Mobile)](screenshots/Signup_Page_(Mobile).png)
+
+## Home Page
+![Home Page](screenshots/Home_Page.png)
+
+## Home Page (Mobile)
+![Home Page (Mobile)](screenshots/Home_Page_(Mobile).png)
+
+## DashBoard Page (Screen 1)
+![DashBoard Page (Screen 1)](screenshots/Dashboard_Page_1.png)
+
+## DashBoard Page (Screen 2)
+![DashBoard Page (Screen 2)](screenshots/Dashboard_Page_2.png)
+
+## DashBoard Page (Screen 1 Mobile)
+![DashBoard Page (Screen 1 Mobile)](screenshots/Dashboard_Page_(Mobile).png)
+
+## Profile Page
+![Profile Page](screenshots/Profile_Page.png)
+
+## Profile Page (Mobile)
+![Profile Page (Mobile)](screenshots/Profile_Page_(Mobile).png) 
 
 
 **👤Author**
