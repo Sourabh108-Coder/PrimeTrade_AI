@@ -49,17 +49,15 @@ const Register = () => {
 
       <div className="min-h-screen relative overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 flex items-center justify-center ">
 
-        {/* Background Blobs */}
         <div className="absolute -top-20 -left-20 w-80 h-80 bg-blue-200 rounded-full blur-3xl opacity-30"></div>
 
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-200 rounded-full blur-3xl opacity-30"></div>
 
         <div className="absolute top-1/3 right-1/4 w-60 h-60 bg-cyan-200 rounded-full blur-3xl opacity-20"></div>
 
-        {/* Register Card */}
         <div className="relative  w-full max-w-5xl bg-white rounded-3xl shadow-[0_20px_60px_rgba(15,23,42,0.08)] border border-gray-100 overflow-hidden grid lg:grid-cols-2">
 
-          {/* Left Side */}
+          
           <div className="hidden lg:flex flex-col justify-center bg-gradient-to-br from-indigo-50 to-blue-50 p-12">
 
             <div className = "flex justify-center items-center gap-6">
@@ -88,9 +86,7 @@ const Register = () => {
                   <h3 className="font-semibold text-gray-800">
                     Create Unlimited Tasks
                   </h3>
-                  {/* <p className="text-gray-500 text-sm">
-                    Organize everything easily.
-                  </p> */}
+                 
                 </div>
               </div>
 
@@ -103,9 +99,7 @@ const Register = () => {
                   <h3 className="font-semibold text-gray-800">
                     Stay Organized
                   </h3>
-                  {/* <p className="text-gray-500 text-sm">
-                    Plan your day with confidence.
-                  </p> */}
+                
                 </div>
               </div>
 
@@ -118,9 +112,7 @@ const Register = () => {
                   <h3 className="font-semibold text-gray-800">
                     Secure Account
                   </h3>
-                  {/* <p className="text-gray-500 text-sm">
-                    Your information stays protected.
-                  </p> */}
+                 
                 </div>
               </div>
 
@@ -128,7 +120,7 @@ const Register = () => {
 
           </div>
 
-          {/* Right Side */}
+         
           <div className="flex items-center justify-center p-8 md:p-12">
 
             <div className="w-full max-w-md">
@@ -138,14 +130,11 @@ const Register = () => {
                   Create Account
                 </h2>
 
-                {/* <p className="mt-3 text-gray-500">
-                  Let's get you started.
-                </p> */}
               </div>
 
               <form onSubmit={handleSubmit} className="space-y-6">
 
-                {/* Username */}
+             
                 <div>
                   <label className="block text-left text-sm font-semibold text-gray-700 mb-2">
                     Username
@@ -166,7 +155,7 @@ const Register = () => {
                   </div>
                 </div>
 
-                {/* Email */}
+               
                 <div>
                   <label className="block text-left text-sm font-semibold text-gray-700 mb-2">
                     Email Address
@@ -187,7 +176,7 @@ const Register = () => {
                   </div>
                 </div>
 
-                {/* Password */}
+               
                 <div>
                   <label className="block text-left text-sm font-semibold text-gray-700 mb-2">
                     Password
