@@ -46,17 +46,16 @@ export default function Login() {
 
       <div className="min-h-screen relative overflow-hidden bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 flex items-center justify-center px-4 py-10">
 
-        {/* Background Blobs */}
         <div className="absolute -top-20 -left-20 w-80 h-80 bg-blue-200 rounded-full blur-3xl opacity-30"></div>
 
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-200 rounded-full blur-3xl opacity-30"></div>
 
         <div className="absolute top-1/3 right-1/4 w-60 h-60 bg-cyan-200 rounded-full blur-3xl opacity-20"></div>
 
-        {/* Login Card */}
+     
         <div className="relative w-full max-w-5xl bg-white rounded-3xl shadow-[0_20px_60px_rgba(15,23,42,0.08)] border border-gray-100 overflow-hidden grid lg:grid-cols-2">
 
-          {/* Left Section */}
+          
           <div className="hidden lg:flex flex-col justify-center bg-gradient-to-br from-blue-50 to-indigo-50 p-12">
 
             <div className = "flex gap-6 justify-center items-center">
@@ -86,9 +85,7 @@ export default function Login() {
                     Organize Tasks
                   </h3>
 
-                  {/* <p className="text-gray-500 text-sm">
-                    Keep everything in one place.
-                  </p> */}
+                  
                 </div>
               </div>
 
@@ -102,9 +99,7 @@ export default function Login() {
                     Stay Productive
                   </h3>
 
-                  {/* <p className="text-gray-500 text-sm">
-                    Focus on what matters the most.
-                  </p> */}
+                  
                 </div>
               </div>
 
@@ -118,9 +113,7 @@ export default function Login() {
                     Secure Login
                   </h3>
 
-                  {/* <p className="text-gray-500 text-sm">
-                    Your account is protected.
-                  </p> */}
+                 
                 </div>
               </div>
 
@@ -128,7 +121,7 @@ export default function Login() {
 
           </div>
 
-          {/* Right Section */}
+         
           <div className="flex items-center justify-center p-8 md:p-12">
 
             <div className="w-full max-w-md">
@@ -147,7 +140,7 @@ export default function Login() {
 
               <form onSubmit={handleSubmit} className="space-y-6">
 
-                {/* Email */}
+                
                 <div>
 
                   <label className="block text-sm text-left font-semibold text-gray-700 mb-2">
@@ -170,7 +163,7 @@ export default function Login() {
 
                 </div>
 
-                {/* Password */}
+               
                 <div>
 
                   <label className="block text-sm text-left font-semibold text-gray-700 mb-2">
