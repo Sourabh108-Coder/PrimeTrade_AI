@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 import { useNavigate } from "react-router-dom";
 import { User, Mail, Lock, ArrowRight } from "lucide-react";
+import { toast } from "sonner";
 
 const Register = () => {
   const [email, setEmail] = useState("");
@@ -14,7 +15,7 @@ const Register = () => {
     e.preventDefault();
 
     if (!username || !email || !password) {
-      alert("All fields are required");
+      toast.warning("All fields are required");
       return;
     }
 
@@ -30,15 +31,15 @@ const Register = () => {
       const data = await res.json();
 
       if (data.success) {
-        alert("Registration successful!");
+        toast.success("Registration successful!");
         localStorage.setItem("primetradeaitoken", data.token);
         navigate("/dashboard");
       } else {
-        alert("Registration failed: " + data.message);
+        toast.error("Registration failed: " + data.message);
       }
     } catch (err) {
       console.error("Error during registration:", err);
-      alert("An error occurred. Please try again later.");
+      toast.error("An error occurred. Please try again later.");
     }
   };
 
