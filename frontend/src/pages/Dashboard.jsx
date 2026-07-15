@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 import { useNavigate } from "react-router-dom";
+import { toast } from "sonner";
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -26,7 +27,7 @@ const Dashboard = () => {
       if (data.success) {
         setUser(data.user);
       } else {
-        alert("Failed to fetch user: " + data.message);
+        toast.error("Failed to fetch user: " + data.message);
       }
     } catch (err) {
       console.error(err);
@@ -59,16 +60,17 @@ const Dashboard = () => {
   const handleLogout = () => {
     localStorage.removeItem("primetradeaitoken");
     navigate("/login");
+    toast.success("Logged Out Successfully");
   };
 
   const handleAddTask = async () => {
     if (!newTaskTitle) {
-      alert("Task title cannot be empty");
+      toast.info("Please add task title ");
       return;
     }
 
     if (!newTaskDesc) {
-      alert("Task description cannot be empty");
+      toast.info("Please add task description ");
       return;
     }
 
@@ -92,7 +94,7 @@ const Dashboard = () => {
       setNewTaskTitle("");
       setNewTaskDesc("");
 
-      alert("Task added successfully");
+      toast.success("Task added successfully");
     } catch (err) {
       console.error(err);
     }
@@ -108,6 +110,7 @@ const Dashboard = () => {
       });
 
       setTasks(tasks.filter((t) => t._id !== id));
+      toast.success("Task Deleted Successfully");
     } catch (err) {
       console.error(err);
     }
@@ -293,19 +296,13 @@ const Dashboard = () => {
           </div>
 
           {/* Task Title */}
-          <h2
-            className={`text-2xl font-bold mb-3 ${
-              task.completed
-                ? "line-through text-gray-400"
-                : "text-gray-800"
-            }`}
-          >
-            {task.title}
-          </h2>
+          <h2 className={`text-2xl font-bold mb-3 break-words ${
+           task.completed ? "line-through text-gray-400" : "text-gray-800"}`}>
+           {task.title.length > 17 ? task.title.substring(0, 17) + "..." : task.title}</h2>
 
           {/* Description */}
-          <p className="text-gray-600 leading-7 min-h-[60px]">
-            {task.description}
+          <p className="text-gray-600 leading-7 min-h-[60px] break-words">
+            {task.description.length > 17 ? task.description.substring(0, 17) + "..." : task.description}
           </p>
 
           {/* Buttons */}
