@@ -52,7 +52,7 @@ export default function Home() {
           </div>
 
           {/* Right Image */}
-          <div className="flex justify-center relative">
+          <div className="flex flex-col justify-center relative">
 
             <div className="absolute h-80 w-80 rounded-full bg-gradient-to-r from-blue-400 to-indigo-500 opacity-20 blur-3xl"></div>
 
@@ -61,9 +61,17 @@ export default function Home() {
               alt="Robot"
               className="relative h-72 sm:h-80 lg:h-[450px] w-auto animate-bounce"
             />
+             <button
+               onClick={() => navigate("/dashboard")}
+               className="rounded-xl bg-gradient-to-r p-4 from-indigo-600 to-blue-500 text-white text-lg font-semibold hover:scale-105 duration-300"
+             >
+                Go to Your Dashboard
+             </button>
           </div>
+         
         </div>
       </section>
+      
     </div>
   );
 }
