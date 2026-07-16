@@ -15,7 +15,7 @@ const Profile = () => {
     if(!token){
 
       navigate("/login");
-      alert("Please login to access your profile.");
+      toast.info("Please login to access your profile.");
       
       return;
     }
@@ -26,7 +26,7 @@ const Profile = () => {
         });
         const data = await res.json();
         if (data.success) setUser(data.user);
-        else alert("Failed to fetch profile: " + data.message);
+        else toast.error("Failed to fetch profile: " + data.message);
       } catch (err) {
         console.error(err);
       }
@@ -61,11 +61,11 @@ const Profile = () => {
       });
       const data = await res.json();
       if (data.success) {
-        alert("Profile updated successfully!");
+        toast.success("Profile updated successfully!");
         setPassword("");
         setUser(data.user);
       } else {
-        alert("Update failed: " + data.message);
+        toast.error("Updation failed: " + data.message);
       }
     } catch (err) {
       console.error(err);
