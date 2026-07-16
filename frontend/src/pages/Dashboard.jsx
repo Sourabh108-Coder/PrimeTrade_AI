@@ -50,6 +50,7 @@ const Dashboard = () => {
 
   useEffect(() => {
     if (!token) {
+      toast.info("Please Login to access functionality!");
       navigate("/login");
     } else {
       fetchUser();

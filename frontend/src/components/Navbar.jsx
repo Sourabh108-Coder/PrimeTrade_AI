@@ -1,7 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { Menu, X, CheckCircle } from "lucide-react";
-
+import {toast} from "sonner";
+ 
 export default function Navbar() {
   const navigate = useNavigate();
 
@@ -12,6 +13,12 @@ export default function Navbar() {
     const token = localStorage.getItem("primetradeaitoken");
     setUserLoggedIn(!!token);
   }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem("primetradeaitoken");
+    navigate("/login");
+    toast.success("Logged Out Successfully");
+  };
 
 
   return (
@@ -65,15 +72,6 @@ export default function Navbar() {
             </>
           ) : (
             <>
-
-              <button
-                onClick={() => navigate("/dashboard")}
-                className="px-5 py-2.5 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700 shadow-md shadow-blue-200 transition"
-              >
-                Dashboard
-              </button>
-
-
               <button
                 onClick={() => navigate("/profile")}
                 className="w-11 h-11 rounded-full bg-gray-100 hover:bg-gray-200 transition flex items-center justify-center"
@@ -85,6 +83,20 @@ export default function Navbar() {
                   className="w-8 h-8 rounded-full"
                 />
 
+              </button>
+
+              <button
+                onClick={() => navigate("/dashboard")}
+                className="px-5 py-2.5 rounded-xl bg-blue-600 text-white font-semibold hover:bg-blue-700 shadow-md shadow-blue-200 transition"
+              >
+                Dashboard
+              </button>
+
+              <button
+                onClick={handleLogout}
+                className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-red-500 to-pink-500 text-white font-semibold shadow-md shadow-blue-200 transition"
+              >
+                Logout
               </button>
 
             </>
@@ -158,6 +170,16 @@ export default function Navbar() {
                 className="w-full py-3 rounded-xl bg-blue-600 text-white font-semibold"
               >
                 Dashboard
+              </button>
+
+              <button
+                onClick={() => {
+                  handleLogout();
+                  setIsMobileMenuOpen(false);
+                }}
+                className="w-full py-3 rounded-xl bg-gradient-to-r from-red-500 to-pink-500 text-white font-semibold"
+              >
+                Logout
               </button>
 
 
