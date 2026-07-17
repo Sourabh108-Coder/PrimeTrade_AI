@@ -1,4 +1,4 @@
-## PrimeTrade AI – Full Stack Assignment
+## Taskora – Full Stack Assignment
 
 *A scalable full-stack web application with authentication, protected dashboard, profile management, and task CRUD functionality.*
 
@@ -132,4 +132,4 @@
 
 
 **👤Author**
-   *- Sourabh (Frontend Developer Intern Candidate) (https://github.com/Sourabh108-Coder/)* 
+   *- Sourabh (https://github.com/Sourabh108-Coder/)* 
