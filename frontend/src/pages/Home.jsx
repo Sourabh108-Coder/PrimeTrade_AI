@@ -18,7 +18,7 @@ export default function Home() {
           {/* Left Content */}
           <div className="text-center lg:text-left">
 
-            <p className="inline-block rounded-full bg-blue-100 px-5 py-2 text-blue-700 font-semibold mb-6">
+            <p className="inline-block rounded-full mt-5 sm:mt-0 bg-blue-100 px-5 py-2 text-blue-700 font-semibold mb-6">
               🚀 Welcome to the Future
             </p>
 
@@ -59,11 +59,11 @@ export default function Home() {
             <img
               src="https://media.tenor.com/s1Y9XfdN08EAAAAi/bot.gif"
               alt="Robot"
-              className="relative h-72 sm:h-80 lg:h-[450px] w-auto animate-bounce"
+              className="relative h-72 sm:h-80 lg:h-[450px] w-auto animate-bounce pointer-events-none"
             />
              <button
                onClick={() => navigate("/dashboard")}
-               className="rounded-xl bg-gradient-to-r p-4 from-indigo-600 to-blue-500 text-white text-lg font-semibold hover:scale-105 duration-300"
+               className="relative z-20 mt-6 rounded-xl bg-gradient-to-r from-indigo-600 to-blue-500 p-4 text-lg font-semibold text-white"
              >
                 Go to Your Dashboard
              </button>

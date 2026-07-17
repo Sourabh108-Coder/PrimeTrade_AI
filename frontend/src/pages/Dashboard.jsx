@@ -164,17 +164,17 @@ const Dashboard = () => {
 
       <div>
 
-        <h2 className="text-5xl font-extrabold text-gray-800 mt-2">
+        <h2 className="text-2xl sm:text-5xl font-extrabold text-gray-800 mt-2">
           👋 Welcome Back {user?.name || "User"}
         </h2>
       </div>
 
-      <button
+      {/* <button
         onClick={handleLogout}
         className="bg-gradient-to-r from-red-500 to-pink-500 text-white px-7 py-3 rounded-xl shadow-lg hover:scale-105 duration-300"
       >
         Logout
-      </button>
+      </button> */}
 
     </div>
 
@@ -262,7 +262,7 @@ const Dashboard = () => {
 
         <button
           onClick={handleAddTask}
-          className="rounded-xl bg-gradient-to-r from-indigo-600 to-blue-500 text-white text-lg font-semibold hover:scale-105 duration-300"
+          className="rounded-xl bg-gradient-to-r py-4 sm:py-0 from-indigo-600 to-blue-500 text-white text-lg font-semibold hover:scale-105 duration-300"
         >
           + Add Task
         </button>

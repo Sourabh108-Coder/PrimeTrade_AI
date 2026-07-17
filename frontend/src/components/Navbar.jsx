@@ -22,7 +22,7 @@ export default function Navbar() {
 
 
   return (
-    <nav className="bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 px-5 sm:px-8 py-4">
+    <nav className="relative z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-100 px-5 sm:px-8 py-4">
 
       <div className="max-w-7xl mx-auto flex items-center justify-between">
 
@@ -160,14 +160,12 @@ export default function Navbar() {
             </>
           ) : (
             <>
-
-
               <button
                 onClick={() => {
                   navigate("/dashboard");
                   setIsMobileMenuOpen(false);
                 }}
-                className="w-full py-3 rounded-xl bg-blue-600 text-white font-semibold"
+                className="w-full py-3 rounded-xl bg-blue-600 text-white cursor-pointer font-semibold"
               >
                 Dashboard
               </button>
@@ -177,7 +175,7 @@ export default function Navbar() {
                   handleLogout();
                   setIsMobileMenuOpen(false);
                 }}
-                className="w-full py-3 rounded-xl bg-gradient-to-r from-red-500 to-pink-500 text-white font-semibold"
+                className="w-full py-3 rounded-xl bg-gradient-to-r cursor-pointer from-red-500 to-pink-500 text-white font-semibold"
               >
                 Logout
               </button>
@@ -188,7 +186,7 @@ export default function Navbar() {
                   navigate("/profile");
                   setIsMobileMenuOpen(false);
                 }}
-                className="w-full py-3 rounded-xl bg-gray-100 font-semibold text-gray-700"
+                className="w-full py-3 rounded-xl bg-gray-100 cursor-pointer font-semibold text-gray-700"
               >
                 Profile
               </button>
